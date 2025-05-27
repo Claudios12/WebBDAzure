@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - examen3CDG
+name: Build and deploy JAR app to Azure Web App - Examen3cdg
 
 on:
   push:
@@ -52,15 +52,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_79994517D56145CA8A3A845A46A4A455 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D9E6EB4F2FFA494D80DA1285BC5D7607 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_74237B85FFDF45A8AC9F0F929431F24B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_031101EC41274E709AAF5D02A0FE69F3 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_458AB3CB4DFF40B0A79E8F2B0F9F3C05 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_13BDF43107A44C0B81D6152836D0FAB7 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'examen3CDG'
+          app-name: 'Examen3cdg'
           slot-name: 'Production'
           package: '*.jar'
           
